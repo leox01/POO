@@ -87,6 +87,76 @@ public class JuegoDelGato {
                             repetirTurnoMismoJugador= true;
                         }
                         break;
+                    case 'C':
+                    case 'c':
+                        if(array[0][2]=='C'){
+                            array[0][2] = jugador;
+                            repetirTurnoMismoJugador = false;
+                        }else{
+                            System.out.println("Error la casilla ya está ocupada");
+                            repetirTurnoMismoJugador= true;
+                        }
+                        break;
+                    case 'D':
+                    case 'd':
+                        if(array[1][0]=='D'){
+                            array[1][0] = jugador;
+                            repetirTurnoMismoJugador = false;
+                        }else{
+                            System.out.println("Error la casilla ya está ocupada");
+                            repetirTurnoMismoJugador= true;
+                        }
+                        break;
+                    case 'E':
+                    case 'e':
+                        if(array[1][1]=='E'){
+                            array[1][1] = jugador;
+                            repetirTurnoMismoJugador = false;
+                        }else{
+                            System.out.println("Error la casilla ya está ocupada");
+                            repetirTurnoMismoJugador= true;
+                        }
+                        break;
+                    case 'F':
+                    case 'f':
+                        if(array[1][2]=='F'){
+                            array[1][2] = jugador;
+                            repetirTurnoMismoJugador = false;
+                        }else{
+                            System.out.println("Error la casilla ya está ocupada");
+                            repetirTurnoMismoJugador= true;
+                        }
+                        break;
+                    case 'G':
+                    case 'g':
+                        if(array[2][0]=='G'){
+                            array[2][0] = jugador;
+                            repetirTurnoMismoJugador = false;
+                        }else{
+                            System.out.println("Error la casilla ya está ocupada");
+                            repetirTurnoMismoJugador= true;
+                        }
+                        break;
+                    case 'H':
+                    case 'h':
+                        if(array[2][1]=='H'){
+                            array[2][1] = jugador;
+                            repetirTurnoMismoJugador = false;
+                        }else{
+                            System.out.println("Error la casilla ya está ocupada");
+                            repetirTurnoMismoJugador= true;
+                        }
+                        break;
+                    case 'I':
+                    case 'i':
+                        if(array[2][2]=='I'){
+                            array[2][2] = jugador;
+                            repetirTurnoMismoJugador = false;
+                        }else{
+                            System.out.println("Error la casilla ya está ocupada");
+                            repetirTurnoMismoJugador= true;
+                        }
+                        break;
 
                     default: System.out.println("No existe esa casilla ");
                              repetirTurnoMismoJugador = true;
@@ -95,7 +165,7 @@ public class JuegoDelGato {
             }while(repetirTurnoMismoJugador);
 
             //verificar si hay ganador
-            verificarGanador(jugador);
+            boolean seguirJugando = verificarGanador(jugador);
 
             //verificar si hay empate
             verificarEmpate();
@@ -108,9 +178,12 @@ public class JuegoDelGato {
         
     }
 
-    public static void verificarGanador(char jugador) {
+    public static boolean verificarGanador(char jugador) {
         System.out.println("Verificando ganador....");
     
+        
+            
+        return true;
     }
 
     public static void verificarEmpate() {
